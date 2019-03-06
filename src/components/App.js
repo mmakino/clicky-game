@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from '../shared/images/logo.svg';
 import './App.css';
-import Game from './main/Game';
+import Game from './ClickyItemContainer';
 
 class App extends Component {
   render() {

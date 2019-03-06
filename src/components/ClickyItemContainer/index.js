@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import "./style.css";
 
 //
 // Clickable image sources 
@@ -19,17 +20,11 @@ const clickyImages = [
 ];
 
 function ClickyItem(props) {
-  const imageStyle = {
-    width: "11vw",
-    height: "auto",
-  };
-  
   return (
     <img
       src={props.item.img}
       alt="unavailable"
-      className="rounded float-left m-2"
-      style={imageStyle}
+      className="rounded float-left m-2 clicky-item"
       onClick={props.onClick}
     />
   );
