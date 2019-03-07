@@ -10,3 +10,8 @@
 .App-header {
   background: #176;
 }
+
+.msg-text {
+  color: #61dafb;
+  text-align: center;
+}

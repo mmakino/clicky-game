@@ -17,11 +17,9 @@ class AppNavbar extends Component {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div className="navbar-nav">
-            {/* <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="#">Features</a>
-            <a class="nav-item nav-link" href="#">Pricing</a>
-            <a class="nav-item nav-link disabled" href="#">Disabled</a> */}
+          <div className="navbar-navi game-stats">
+            <span class="nav-item ml-3 score">Score {this.props.score}</span>
+            <span class="nav-item ml-3 top-score">Top Score {this.props.topScore}</span>
           </div>
         </div>
         <a className="navbar-brand"
@@ -29,6 +27,12 @@ class AppNavbar extends Component {
           target="_blank"
           rel="noopener noreferrer">
           <img src={logo} className="App-logo" alt="logo" />
+        </a>
+        <a className="navbar-brand"
+          href="http://m.mlb.com/sea/roster"
+          target="_blank"
+          rel="noopener noreferrer">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/0/0a/Seattle_Mariners_logo_1980_to_1986.png" className="Mariners-logo" alt="logo" />
         </a>
       </nav>
     );
