@@ -1,8 +1,7 @@
-/* 
-  Style for ClickyItem
-*/
 
-.clicky-item {
-    width: "11vw";
-    height: "auto";
+
+/* */
+.clicky-container-stat {
+  color: #2255cc; 
+  text-align: center;
 }

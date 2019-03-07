@@ -1,34 +1,7 @@
 import React, { Component } from 'react';
+import { images as clickyImages } from "./ItemSrc";
+import ClickyItem from "./ClickyItem";
 import "./style.css";
-
-//
-// Clickable image sources 
-//
-const clickyImages = [
-  'https://securea.mlb.com/mlb/images/players/head_shot/429665@2x.jpg',
-  'https://securea.mlb.com/mlb/images/players/head_shot/571745@2x.jpg',
-  'https://securea.mlb.com/mlb/images/players/head_shot/570267@2x.jpg',
-  'https://securea.mlb.com/mlb/images/players/head_shot/572122@2x.jpg',
-  'https://securea.mlb.com/mlb/images/players/head_shot/543829@2x.jpg',
-  'https://securea.mlb.com/mlb/images/players/head_shot/553882@2x.jpg',
-  'https://securea.mlb.com/mlb/images/players/head_shot/579328@2x.jpg',
-  'https://securea.mlb.com/mlb/images/players/head_shot/433587@2x.jpg',
-  'https://securea.mlb.com/mlb/images/players/head_shot/594835@2x.jpg',
-  'https://securea.mlb.com/mlb/images/players/head_shot/596129@2x.jpg',
-  'https://securea.mlb.com/mlb/images/players/head_shot/664238@2x.jpg',
-  'https://securea.mlb.com/mlb/images/players/head_shot/571679@2x.jpg'
-];
-
-function ClickyItem(props) {
-  return (
-    <img
-      src={props.item.img}
-      alt="unavailable"
-      className="rounded float-left m-2 clicky-item"
-      onClick={props.onClick}
-    />
-  );
-}
 
 //
 // Container for the clickable items
@@ -54,7 +27,7 @@ class ClickyItemContainer extends Component {
   initItems(srcImages) {
     return srcImages.map((img) => {
       return {
-        img: img,
+        image: img,
         isClicked: false,
       }
     });
@@ -147,7 +120,7 @@ class ClickyItemContainer extends Component {
   render() {
     return (
       <div>
-        <h4 style={{color: '#2255cc', textAlign: 'center'}}>
+        <h4 class="clicky-container-stat">
           Score: {this.state.score} 
           | Top Score: {this.state.topScore}
         </h4>
