@@ -53,6 +53,38 @@
     http://localhost:3000/
     ```
 
+### Directories & Files
+
+* `create-react-app` was used initially to start development of this app, and `App.js` and `App.css` have been modified.
+* The other React components such as `ClickyItem`, `AppNavbar` have been added specifically for this web application.
+
+```
+src
+├── components
+│   ├── AppNavbar               -- Navbar React component
+│   │   ├── index.js            -- Javascript for AppNavbar
+│   │   └── style.css           -- CSS for AppNavbar
+│   ├── ClickyItemContainer     -- Clickable items container 
+│   │   ├── ClickyItem          -- Single clickable item
+│   │   │   ├── index.js        -- Javascript for ClickyItem
+│   │   │   └── style.css       -- CSS for ClickyItem
+│   │   ├── ItemSrc             -- Image source
+│   │   │   └── index.js        -- Data object for the images
+│   │   ├── index.js            -- Javascript for ClickyItemContainer
+│   │   └── style.css           -- CSS for ClickyItemContainer
+│   ├── App.css                 -- css for the App
+│   ├── App.js                  -- main game app page
+│   └── App.test.js
+├── shared
+│   └── images
+│       └── logo.svg
+├── index.css
+├── index.js
+└── serviceWorker.js
+
+7 directories, 14 files
+```
+
 ### Game Snapshots
 
 * Initial screen
